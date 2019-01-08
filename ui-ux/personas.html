@@ -20,6 +20,10 @@
 
         <!-- Custom CSS -->
         <link href="/css/stylish-portfolio.css" rel="stylesheet">
+        
+         <!-- Animation CSS stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Page Specific CSS -->
         <style>
@@ -35,48 +39,68 @@
             .dropdown a {
                 color: black;
             }
+/*
             .masthead {
+                background-image: linear-gradient(rgba(21,119,162,1), rgba(21,119,162,0));
+            }
+*/
+            
+            #scroll-indicator {
+                position: relative;
+                top: 50px;
+                color: white;
+                text-decoration: none;
+            }
+            
+            #scroll-link:hover {
+                color: white;
+                text-decoration: none;
+            }
+            
+            .masthead {
+                height: 100%;
                 background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.1))), url("/ui-ux/img/mastheads/personas-masthead.png");
                 background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("/ui-ux/img/mastheads/personas-masthead.png");
             }
+
         </style>
 
     </head>
 
     <body id="page-top">
 
-        <!-- Navigation -->
-        <a class="menu-toggle rounded" href="#">
-            <i class="fas fa-bars"></i>
-        </a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a class="js-scroll-trigger" href="/index.html#page-top">Jason Hebert</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="/index.html#page-top">Home</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="/index.html#about">About</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="/index.html#portfolio">Portfolio</a>
-                </li>
-                <li class="sidebar-nav-item other-nav-item">
-                    <a class="js-scroll-trigger" href="interface-redesign.html">UI/UX - Interface Redesign</a>
-                </li>
-                <li class="sidebar-nav-item other-nav-item">
-                    <a class="js-scroll-trigger" href="find-a-cool-cat.html">UI/UX - Find a Cool Cat</a>
-                </li>
-                <li class="sidebar-nav-item other-nav-item">
-                    <a class="js-scroll-trigger" href="a-b-testing.html">UI/UX - A/B Testing</a>
-                </li>
-            </ul>
+     <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><i class="fa fa-home"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="/resume/Resume.pdf">Resume</a>
+                        </li>
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/index.html#ui-ux-projects">UI / UX Projects</a>
+                                <a class="dropdown-item" href="/index.html#misc-projects">Miscellaneous Projects</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- Navigation -->
 
         <!-- Header -->
-        <header class="masthead d-flex">
+        <header class="masthead d-flex animated fadeIn slow">
             <div class="container text-center my-auto">
                 <h1 class="mb-1">Personas and Storyboard</h1>
                 <div class="lead mb-5 select-section">
@@ -96,14 +120,18 @@
                             <li><a class="js-scroll-trigger" href="#takeaways">Takeaways and Next Steps</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
+                <a id="scroll-link" href="#introduction" class="js-scroll-trigger"><div id="scroll-indicator" class="animated bounce slow delay-1s infinite pt-5 mt-5">
+                    <p class="my-0 py-0">Scroll Down</p>
+                    <i class="fa fa-chevron-down"></i>
+                    </div></a>
             </div>
             <div class="overlay"></div>
         </header>
 
         <!-- Introduction -->
-        <section class="bg-light content-section" id="introduction">
+        <section class="content-section" id="introduction">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
@@ -133,7 +161,7 @@
         </section>
 
         <!-- Research Methodology -->
-        <section class="bg-light content-section" id="research-methodology">
+        <section class="content-section" id="research-methodology">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
@@ -212,7 +240,7 @@
         </section>
 
         <!-- Personas -->
-        <section class="bg-light content-section" id="personas">
+        <section class="content-section" id="personas">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
@@ -241,7 +269,7 @@
         </section>
 
         <!-- Takeaways -->
-        <section class="bg-light content-section" id="takeaways">
+        <section class="content-section" id="takeaways">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 mx-auto">
@@ -254,7 +282,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer text-center">
+        <footer class="footer text-center bg-light">
             <div class="container">
 
                 <!-- Footer Contact -->
@@ -291,6 +319,11 @@
 
         <!-- Custom scripts for this template -->
         <script src="/js/stylish-portfolio.min.js"></script>
+        
+        <!-- Animation JS scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <!-- Animation JS scripts -->
 
     </body>
 

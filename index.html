@@ -21,40 +21,78 @@
         <!-- Custom CSS -->
         <link href="css/stylish-portfolio.css" rel="stylesheet">
 
+        <!-- Animation CSS stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <style>
+            .masthead {
+                height: 100%;
+                padding-top: 1rem;
+            }
+            
+            #scroll-indicator {
+                position: relative;
+                top: 100px;
+            }
+            
+            .si-black {
+                color: black;
+                animation-delay: 3s;
+            }
+            
+            .si-white {
+                color: white;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+        </style>
+
 
     </head>
 
     <body id="page-top">
 
         <!-- Navigation -->
-        <a class="menu-toggle rounded" href="#">
-            <i class="fas fa-bars"></i>
-        </a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                    <a class="js-scroll-trigger" href="#page-top">Jason Hebert</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#page-top">Home</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="about-me.html">About</a>
-                </li>
-                <li class="sidebar-nav-item">
-                    <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html"><i class="fa fa-home"></i></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" target="_blank" href="/resume/Resume.pdf">Resume</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Portfolio
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/index.html#ui-ux-projects">UI / UX Projects</a>
+                                <a class="dropdown-item" href="/index.html#misc-projects">Miscellaneous Projects</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+        <!-- Navigation -->
 
         <!-- Header -->
-        <header class="masthead d-flex">
+        <header id="masthead-header" class="masthead d-flex animated slow">            
             <div class="container text-center my-auto">
-                <h1 class="mb-1">Jason Hebert</h1>
-                <h3 class="mb-5">
-                    <em>A sneak peak into my life</em>
-                </h3>
-                <a href="about-me.html" class="btn btn-light">About Me</a>
+                <h1>Jason Hebert</h1>
+                <h3 class="animated fadeIn delay-1s slower">A sneak peak into my life</h3>
+                <div id="scroll-indicator" class="animated fadeIn si-black pt-5 mt-5 ">
+                    <p>Scroll Down</p>
+                    <i class="fa fa-chevron-down"></i>
+                </div>
+                
             </div>
             <div class="overlay"></div>
         </header>
@@ -67,96 +105,98 @@
                 </div>
 
                 <!-- UI / UX PROJECTS -->
-                <h2 class="text-center mt-2 mb-2">User Interfaces &amp; User Experience Projects</h2>
-                <p class="lead text-center mb-3 small">The following projects have been presented in an order that follows the typical timeline for developing a user-centric interface. <b>Personas &amp; Storyboards</b> highlights the first step with developing a specific user to refer to during development. <b>Interface Redesign</b> follows showing the process for developing both lo- and hi-fidelity mockups. <b>Find a Cool Cat</b> is the third step of creating an interactive and deployable interface. And lastly, <b>A/B Testing</b> investigates methodologies for evaluating how successful an interface is using data.</p>
-
-
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/ui-ux/personas.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>Personas and Storyboards</h2>
-                                    <p class="mb-0">A project showcasing familiarity with curating personas and storyboard users for a given interface.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/ui-ux/img/portfolio-images/personas-port-img.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/ui-ux/interface-redesign.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>Interface Redesign</h2>
-                                    <p class="mb-0">A project showcasing familiarity with lo-fidelity and hi-fidelity mockups.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/ui-ux/img/portfolio-images/redesign-port-img.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/ui-ux/find-a-cool-cat.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>Find a Cool Cat</h2>
-                                    <p class="mb-0">A project showcasing familiarity and ability to create an interactive webpage using HTML, CSS, and React.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/ui-ux/img/portfolio-images/find-port-img.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/ui-ux/a-b-testing.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>A/B Testing</h2>
-                                    <p class="mb-0">A project showcasing familiarity with A/B testing technologies and methodologies.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/ui-ux/img/portfolio-images/ab-port-img.png" alt="">
-                        </a>
+                <div id="ui-ux-projects" data-aos="fade-up"
+                     data-aos-duration="500">
+                    <h2 class="text-center mt-2 mb-2">User Interfaces &amp; User Experience Projects</h2>
+                    <p class="lead text-center mb-3 small">The following projects have been presented in an order that follows the typical timeline for developing a user-centric interface. <b>Personas &amp; Storyboards</b> highlights the first step with developing a specific user to refer to during development. <b>Interface Redesign</b> follows showing the process for developing both lo- and hi-fidelity mockups. <b>Find a Cool Cat</b> is the third step of creating an interactive and deployable interface. And lastly, <b>A/B Testing</b> investigates methodologies for evaluating how successful an interface is using data.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/ui-ux/personas.html">
+                                <div class="card animated pulse mb-3 shadow text-center caption">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/ui-ux/img/portfolio-images/personas-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Personas and Storyboards</h5>
+                                        <p class="card-text">A project showcasing familiarity with curating personas and storyboard users for a given interface.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> 
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/ui-ux/interface-redesign.html">
+                                <div class="card animated pulse mb-3 shadow text-center caption">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/ui-ux/img/portfolio-images/redesign-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Interface Redesign</h5>
+                                        <p class="card-text">A project showcasing familiarity with lo-fidelity and hi-fidelity mockups.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/ui-ux/find-a-cool-cat.html">
+                                <div class="card animated pulse mb-3 shadow text-center caption">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/ui-ux/img/portfolio-images/find-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Find a Cool Cat</h5>
+                                        <p class="card-text">A project showcasing familiarity and ability to create an interactive webpage using HTML, CSS, and React.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/ui-ux/a-b-testing.html">
+                                <div class="card animated pulse mb-3 shadow text-center caption">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/ui-ux/img/portfolio-images/ab-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">A/B Testing</h5>
+                                        <p class="card-text">A project showcasing familiarity with A/B testing technologies and methodologies.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <!-- UI / UX PROJECTS -->
 
                 <!-- MISCELLANEOUS PROJECT -->
-                <h2 class="text-center mt-4">Miscellaneous Projects</h2>
-                <p class="lead text-center mb-3 small">The projects below cannot currently be classified under any specific type of product: they are going rogue. Some things explored here are photography and physical computing. More will be added to the list as they accumulate.</p>
+                <div id="misc-projects" class="mt-5 mb-5" data-aos="fade-up"
+                     data-aos-duration="500">
+                    <h2 class="text-center mt-4">Miscellaneous Projects</h2>
+                    <p class="lead text-center mb-3 small">The projects below cannot currently be classified under any specific type of product: they are going rogue. Some things explored here are photography and physical computing. More will be added to the list as they accumulate.</p>
 
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/misc-projects/photography.html">
+                                <div class="card animated pulse mb-3 shadow text-center caption">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/misc-projects/img/port-images/photos-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">35mm Black &amp; Photography</h5>
+                                        <p class="card-text">A collection of images taken and edited for VISA0140: Photography Foundations at Brown University.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
 
-                <div class="row no-gutters">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/misc-projects/photography.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>35mm Black &amp; Photography</h2>
-                                    <p class="mb-0">A collection of images taken and edited for VISA0140: Photography Foundations at Brown University.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/misc-projects/img/port-images/photos-port-img.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="/misc-projects/etch-a-sketch.html">
-                            <span class="caption">
-                                <span class="caption-content">
-                                    <h2>Experimental Etch-a-Sketch</h2>
-                                    <p class="mb-0">A project utilizing different physical and visual computational tools created for RISD0420B: Introduction to Computation taken at RISD.</p>
-                                </span>
-                            </span>
-                            <img class="img-fluid" src="/misc-projects/img/port-images/etch-port-img.png" alt="">
-                        </a>
-                    </div>
+                        <div class="col-lg-6">
+                            <a class="card-link" href="/misc-projects/etch-a-sketch.html">
+                                <div class="card animated pulse mb-3 shadow text-center">
+                                    <img class="img-fluid card-image-top" id="photography-img" src="/misc-projects/img/port-images/etch-port-img.png">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Experimental Etch-a-Sketch</h5>
+                                        <p class="card-text">A project utilizing different computational tools created for RISD0420B: Introduction to Computation taken at RISD.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>  
                 </div>
-
-
                 <!-- MISCELLANEOUS PROJECT -->
 
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="footer text-center">
+        <footer class="footer bg-light text-center">
             <div class="container">
 
                 <!-- Footer Contact -->
@@ -165,17 +205,17 @@
 
                     <!-- Grid row -->
                     <div class="row">
-                        <p class="col">
+                        <p class="col-lg">
                             <i class="fa fa-envelope mr-3"></i>jason_hebert@brown.edu</p>
-                        <p class="col">
+                        <p class="col-lg">
                             <i class="fa fa-envelope mr-3"></i>hebert.jason97@gmail.com</p>
-                        <p class="col">
+                        <p class="col-lg">
                             <i class="fa fa-phone mr-3"></i>(802) 291-0408</p>
                     </div>
                     <!-- Grid row -->
                 </div>
 
-                <p class="text-muted small mb-0">Copyright &copy; Jason Hebert, 2018</p>
+                <p class="small text-muted mb-0">Copyright &copy; Jason Hebert, 2018</p>
             </div>
         </footer>
 
@@ -193,6 +233,54 @@
 
         <!-- Custom scripts for this template -->
         <script src="js/stylish-portfolio.min.js"></script>
+
+        <!-- Animation JS scripts -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <!-- Animation JS scripts -->
+        
+        <script>
+
+            $.fn.extend({
+                animateCss: function(animationName, callback) {
+                    var animationEnd = (function(el) {
+                        var animations = {
+                            animation: 'animationend',
+                            OAnimation: 'oAnimationEnd',
+                            MozAnimation: 'mozAnimationEnd',
+                            WebkitAnimation: 'webkitAnimationEnd',
+                        };
+
+                        for (var t in animations) {
+                            if (el.style[t] !== undefined) {
+                                return animations[t];
+                            }
+                        }
+                    })(document.createElement('div'));
+
+                    this.addClass('animated ' + animationName).one(animationEnd, function() {
+                        $(this).removeClass('animated ' + animationName);
+
+                        if (typeof callback === 'function') callback();
+                    });
+
+                    return this;
+                },
+            });
+
+            $('#masthead-header').animateCss('pulse', function() {
+                setTimeout(function(){
+                    
+                    $('#scroll-indicator').removeClass('si-black').addClass('si-white');
+                   
+                    
+                    setTimeout(function() {
+                        $('#scroll-indicator').removeClass('fadeIn delay-2s').addClass('bounce');
+                    }, 750);
+                         
+                }, 500);
+            });
+        </script>
 
     </body>
 
