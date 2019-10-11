@@ -73,11 +73,11 @@
 */
     
     /** DARKEST TO LIGHTEST **/
-    --color-one: #011826;
-    --color-two: #496B73;
-    --color-three: #7C9EA6;
-    --color-four: #C1D4D9;
-    --color-five: #EBF1F2;
+    --color-one: #111111;
+    --color-two: #333333;
+    --color-three: #555555;
+    --color-four: #777777;
+    --color-five: #999999;
 
     /* color variables */
     --primary-background-color: var(--color-three);
