@@ -1,236 +1,664 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Portfolio</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
     <meta name="author" content="Jason Hebert">
 
-    <!-- CSS STYLE SHEETS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Jason Hebert</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom fonts for this theme -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <div class="container-fluid">
-        <div class="row shadow top-row red-bg">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Jason Hebert</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="img/resume.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            <!-- NAV BAR -->
-            <nav class="navbar col navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="/index.html">jason hebert</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <!-- Masthead -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
 
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/index.html">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about.html">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" href="/Resume.pdf">resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-pieces/marketing/marketing.html">marketing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-pieces/ui-ux/ui-ux.html">ui/ux</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-pieces/print/print.html">print</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/portfolio-pieces/misc/misc.html">misc.</a>
-                        </li>
-                    </ul>
+            <!-- Masthead Avatar Image -->
+            <img class="masthead-avatar mb-5" src="img/avatar.png" alt="portfolio portrait image">
+
+            <!-- Masthead Heading -->
+            <h1 class="masthead-heading text-uppercase mb-0">Jason Hebert</h1>
+
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
                 </div>
-            </nav>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- Masthead Subheading -->
+            <p class="masthead-subheading font-weight-light mb-0">Candidate for Master's of Industrial Design</p>
 
         </div>
-        <div class="row main-row">
-            <div class="col-md-auto side-col red-bg"></div>
-            <!-- MAIN CONTAINER ------------------------------------------------------>
-            <div class="col main-container" data-aos="zoom-in-up" data-aos-duration="750">
+    </header>
 
-                <section id="marketing">
-                    <h1><a href="/portfolio-pieces/marketing/marketing.html">MARKETING</a></h1>
+    <!-- Portfolio Section -->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
 
-                    <p>Over the course of my time working with Brown University, I have enacted massive overhauls altering the marketing practices and flow of two different offices. Below are the different departments with which I have worked with to create a streamlined marketing flow.</p>
+            <!-- Portfolio Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
 
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a href="portfolio-pieces/marketing/brown-os/brown-os-marketing.html">
-                                <img class="card-img-top" src="/portfolio-pieces/marketing/previews/os-marketing-preview.png" alt="Brown Office of Sustainability Marketing Image Cap Previe">
-                                <div class="card-body">
-                                    <h5 class="card-title">Office of Sustainability Marketing Website</h5>
-                                    <p class="card-text">A structural overhaul streamlinining the marketing operations of Brown University's Office of Sustainability.</p>
-                                </div>
-                            </a>
+            <!-- Icon Divider -->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- Portfolio Grid Items -->
+            <div class="row">
+
+                <!-- Portfolio Item: OSUS Marketing -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioSustainabilityModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="portfolio-pieces/marketing/brown-buds/brown-buds-marketing.html">
-                                <img class="card-img-top" src="/portfolio-pieces/marketing/previews/buds-marketing-preview.png" alt="Brown University Dining Services Marketing Image Cap Preview">
-                                <div class="card-body">
-                                    <h5 class="card-title">Brown University Dining Services Marketing Materials</h5>
-                                    <p class="card-text">A collaboration with Brown University Dining Services to create expandable marketing materials.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/osus-marketing-img-cap.svg" alt="office of sustainability marketing image cap">
                     </div>
-                </section>
+                </div>
 
-
-                <section id="ui-ux">
-                    <h1><a href="/portfolio-pieces/ui-ux/ui-ux.html">UI/UX</a></h1>
-                    <p>The following projects have been presented in an order that follows the typical timeline for developing a user-centric interface. <a href="portfolio-pieces/ui-ux/personas/personas.html"><i>Personas &amp; Storyboards</i></a> highlights the first step with developing a specific user to refer to during development. <a href="portfolio-pieces/ui-ux/redesign/redesign.html"><i>Interface Redesign</i></a> follows showing the process for developing both lo- and hi-fidelity mockups. <a href="portfolio-pieces/ui-ux/find-a-cool-cat/cool-cat.html"><i>Find a Cool Cat</i></a> is the third step of creating an interactive and deployable interface. And lastly, <a href="portfolio-pieces/ui-ux/ab-testing/ab-testing.html"><i>A/B Testing</i></a> investigates methodologies for evaluating how successful an interface is using data.</p>
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/ui-ux/personas/personas.html">
-                                <img class="card-img-top" src="/portfolio-pieces/ui-ux/previews/personas-port-img.png" alt="Personas image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Personas &amp; Storyboard</h5>
-                                    <p class="card-text">Showcases familiarity with curating personas and storyboard users for a given interface.</p>
-                                </div>
-                            </a>
+                <!-- Portfolio Item: BUDS Marketing -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioBudsModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/ui-ux/redesign/redesign.html">
-                                <img class="card-img-top" src="/portfolio-pieces/ui-ux/previews/redesign-port-img.png" alt="Interface redesign image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Interface Redesign</h5>
-                                    <p class="card-text">Showcases familiarity with lo-fidelity and hi-fidelity mockups.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/buds-marketing-img-cap.svg" alt="brown university dining services marketing image cap">
                     </div>
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/ui-ux/find-a-cool-cat/cool-cat.html">
-                                <img class="card-img-top" src="/portfolio-pieces/ui-ux/previews/find-port-img.png" alt="React image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Find a Cool Cat With React</h5>
-                                    <p class="card-text">Showcases ability to use HTML, CSS, and React to search through a datbase in real time.</p>
-                                </div>
-                            </a>
+                </div>
+
+                <!-- Portfolio Item: PERSONAS AND STORYBOARDING -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioPersonasModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/ui-ux/ab-testing/ab-testing.html">
-                                <img class="card-img-top" src="/portfolio-pieces/ui-ux/previews/ab-port-img.png" alt="AB-Testing image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">A/B Testing</h5>
-                                    <p class="card-text">Showcases familiarity with A/B testing methodologies and technologies.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/personas-img-cap.svg" alt="personas and storyboarding image cap">
                     </div>
-                </section>
+                </div>
 
-                <section id="print">
-                    <h1><a href="/portfolio-pieces/print/print.html">PRINT</a></h1>
-
-                    <p>The projects below can broadly be categorized as print media. Examples include brochures, stickers, and posters.</p>
-
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/print/posters/posters.html">
-                                <img class="card-img-top" src="/portfolio-pieces/print/previews/posters-port-img.png" alt="Posters image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Posters</h5>
-                                    <p class="card-text">A collection of posters created for display around the Dartmouth College and Brown University campuses.</p>
-                                </div>
-                            </a>
+                <!-- Portfolio Item: AB Testing -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioABTestingModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/print/sticker-bag-brochures/sticker-bags-brochures.html">
-                                <img class="card-img-top" src="/portfolio-pieces/print/previews/brochure-port-img.png" alt="Brochure and stickers image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Stickers, Bags, &amp; Brochures</h5>
-                                    <p class="card-text">An assortment of stickers, bags, and brochures created for dissemination in professional settings.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/ab-testing-img-cap.svg" alt="a/b testing image cap">
                     </div>
-                </section>
+                </div>
 
-                <section id="misc">
-                    <h1><a href="portfolio-pieces/misc/misc.html">MISCELLANEOUS</a></h1>
-                    <p>The projects below cannot currently be classified under any specific type of product: they are going rogue. Some things explored here are photography and physical computing. More will be added to the list as they accumulate.</p>
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a target="_blank" href="https://jasonhebert97.github.io/super-smash-goilzzz/">
-
-                                <img src="portfolio-pieces/misc/previews/super-smash-goilzz-preview.png" class="card-img-top" alt="super smash goilzzz preview">
-
-                                <div class="card-body">
-                                    <h5 class="card-title">Super Smash Goilzzz</h5>
-                                    <p class="card-text">A project completed during the MCM senior seminar Digital Terraworlding. The goal was to create an entire aesthetic and interactive world with its own sense of continuity.</p>
-                                </div>
-                            </a>
+                <!-- Portfolio Item: WEB DESIGN -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioWebDesignModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/misc/robotics/robotics.html">
-                                <img class="card-img-top" src="/portfolio-pieces/misc/previews/drone-port.png" alt="Drone image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Autonomous Flying Drone</h5>
-                                    <p class="card-text">Class-length project created for CS1951R: Introduction to Robotics at Brown University.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/web-design-img-cap.svg" alt="web design image cap">
                     </div>
+                </div>
 
-                    <div class="card-deck">
-                        <div class="card shadow card-link">
-                            <a href="/portfolio-pieces/misc/photography/photography.html">
-                                <img class="card-img-top" src="/portfolio-pieces/misc/previews/photos-port-img.png" alt="Photography image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">35mm Black &amp; White Photography</h5>
-                                    <p class="card-text">Collection of images and edited for VISA0140: Photography Foundations at Brown University.</p>
-                                </div>
-                            </a>
+                <!-- Portfolio Item: POSTERS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#postersModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
                         </div>
-                        <div class="card shadow card-link">
-                            <a href="https://jasonhebert97.github.io/WebDesignFinal/index.html">
-                                <img class="card-img-top" src="/portfolio-pieces/misc/previews/web-design-port.png" alt="Web design final image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Web Design Final</h5>
-                                    <p class="card-text">A site that compiles the different assignments and projects completed for Web Design taken at RISD.</p>
-                                </div>
-                            </a>
-                        </div>
+                        <img class="img-fluid" src="img/portfolio/posters-img-cap.svg" alt="posters image cap">
                     </div>
-                </section>
+                </div>
+
+                <!-- Portfolio Item: BROCHURES, BAGS, STICKERS -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#brochureStickerBagModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/bags-brochures-img-cap.svg" alt="bags, brochures, and stickers image cap">
+                    </div>
+                </div>
+
+                <!-- Portfolio Item: AUTONOMOUS FLYING DRONE -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#flyingDroneModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/autonomous-drone-img-cap.svg" alt="autonomous flying drone image cap">
+                    </div>
+                </div>
+
+                <!-- Portfolio Item: PHOTOGRAPHY -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#photographyModal">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white">
+                                <i class="fas fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="img/portfolio/photography-img-cap.svg" alt="photography image cap">
+                    </div>
+                </div>
 
             </div>
-            <!-- MAIN CONTAINER ------------------------------------------------------>
-            <div class="col-md-auto side-col red-bg"></div>
+            <!-- /.row -->
+
         </div>
-        <div class="row bottom-row red-bg"></div>
+    </section>
+
+    <!-- About Section -->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+
+            <!-- About Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- About Section Content -->
+            <div class="row">
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead text-justify">Diversity, inclusion, sustainability, and equity are the supports of my ideologies. I am motivated to use my privileges and societal position to aid those in marginalized spaces. I stand at an intersectional crossroads: a multiracial, gender non-binary, queer, and first-generation college graduate.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead text-justify">Brown University recently rewarded me, as of May 2019, a Bachelor's of Arts degree in Modern Culture and Media (digital media production). I plan to continue my education as a Master's of Industrial Design candidate at the Rhode Island School of Design (class of 2022). There, I hope to explore modern digital media technologies through a humanitarian and socio-cultural lens, while nonetheless developing the skills needed to effectively create within the field of computer-mediated production.</p>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead text-justify">I strive to complicate the white, cis-heteronormative, and masculine-dominated computer science field by understanding computation through racialized, gendered, and queer perspectives. Going beyond this, I intend to complicate other idyllic notions of computer technologies by contextualizing them within their environmental and classist contexts.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Location -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Primary Email</h4>
+                    <p class="lead mb-0">hebert.jason97@gmail.com</p>
+                </div>
+
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jason-hebert/">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                    <a target="_blank" class="btn btn-outline-light btn-social mx-1" href="https://github.com/jasonhebert97">
+                        <i class="fab fa-fw fa-github"></i>
+                    </a>
+                </div>
+
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Phone Number</h4>
+                    <p class="lead mb-0">(802) 291-0408</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; Jason Hebert 2019</small>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
     </div>
 
+    <!-- Portfolio Modals -->
 
-    <!-- JAVASCRIPT SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script href="/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
-    <script href="/js/material-dashboard.min.js" type="text/javascript"></script>
+    <!-- Portfolio Modal: OSUS Marketing -->
+    <div class="portfolio-modal modal fade" id="portfolioSustainabilityModal" tabindex="-1" role="dialog" aria-labelledby="portfolioSustainabilityModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Office of Sustainability Marketing Plan</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/osus-marketing-img-cap.svg" alt="office of sustainability, marketing image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">As Brown University's Office of Sustainability transitioned to using the general University's visual theming policies and standards, it was important to effectively articulate the Office's new marketing tactics and streamline the entire flow for the interns. This project involves restructuring the marketing and design flow of the Office.</p>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+                                <a class="btn btn-primary" role="button" href="portfolio-items/marketing/osus-marketing.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
 
-    </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Portfolio Modal: BUDS Dining -->
+    <div class="portfolio-modal modal fade" id="portfolioBudsModal" tabindex="-1" role="dialog" aria-labelledby="portfolioBudsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Brown University Dining Services Marketing Plan</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/buds-marketing-img-cap.svg" alt="brown university dining services marketing image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">In collaboration with the Brown University Office of Sustainability, Brown University Dining Services requested different marketing materials and templates upon which they could expand their visual identity and reach. This project is composed of the different elements that my fellow coworkers and I worked on to aid in the development of Dining Services.</p>
+                                <a class="btn btn-primary" href="portfolio-items/marketing/buds-marketing.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: Personas and Storyboarding -->
+    <div class="portfolio-modal modal fade" id="portfolioPersonasModal" tabindex="-1" role="dialog" aria-labelledby="portfolioPersonasModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Personas &amp; Storyboarding</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/personas-img-cap.svg" alt="personas and storyboarding image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">The projectors in Sayles Hall at Brown University are supposed to do as their name implies: project some sort of image or video from a computer screen to a projector screen. There are two methods for doing this, one wired and the other wireless. The former method is relatively intuitive; however, the latter is far more complicated and lacks practical affordances. One goal for this project was to collect qualitative data and curate two personas presenting different mental models. Following that, a single storyboard was created which goes through an imagined scenario of one of those personas. This project was completed as an assignment for the class <em>User Interface / User Experience (CSCI1300)</em> at Brown University to showcase familiarity with the methodologies for curating user-interface personas and storyboards.</p>
+                                <a class="btn btn-primary" href="portfolio-items/ui-ux/personas.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: AB Testing -->
+    <div class="portfolio-modal modal fade" id="portfolioABTestingModal" tabindex="-1" role="dialog" aria-labelledby="portfolioABTestingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">A/B Testing</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/ab-testing-img-cap.svg" alt="a/b testing image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p>Testing for universal interface effectiveness is no easy feat, the right amount of data and tools makes it somewhat feasible. For this project, a fabricated taxi company located in Memphis was the foundation for the branding; two differing web interfaces were designed alongside a single mobile interface. A form of A/B testing was utilized to discern what interface elements were effective at portraying the information and which web interface layout had higher rates of usability success.</p>
+                                <p class="mb-5">
+                                    Quantitative data for two versions of a website interface was collected in-class and analyzed after. The goal of this project is to experimentally determine what elements of an interface are effective and how to take that information to offer potential solutions for the flaws. This project was completed as an assignment for the class <em>User Interface / User Experience (CSCI1300)</em> at Brown University to showcase familiarity with this specific form of user experience testing, ability to analyze data collected from said tests, and analytical evaluation on what may help the interface perform better.</p>
+                                <a class="btn btn-primary" href="portfolio-items/ui-ux/ab-testing.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: WEB DESIGN -->
+    <div class="portfolio-modal modal fade" id="portfolioWebDesignModal" tabindex="-1" role="dialog" aria-labelledby="portfolioWebDesignModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Web Design Final Compilation</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/web-design-img-cap.svg" alt="web design image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">As the 2019 Wintersession at the Rhode Island School of Design came to an end, it was necessary to compile all projects completed for the class Web Design (GRAPH3271). All parts of this project were coded from hand sans the use of templates (such as Bootstrap). Click below to view the website.</p>
+
+                                <a class="btn btn-primary" role="button" href="https://jasonhebert97.github.io/WebDesignFinal/index.html" target="_blank">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View Site
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: POSTERS -->
+    <div class="portfolio-modal modal fade" id="postersModal" tabindex="-1" role="dialog" aria-labelledby="postersModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Posters</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/posters-img-cap.svg" alt="posters image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">As an integral part of advertising, an extensive collection of posters and other printable graphics have accumulated and have been used primarily around the Dartmouth College and Brown University campuses. Click below to view the posters.</p>
+                                <a class="btn btn-primary" href="portfolio-items/graphics/posters.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: BROCHURES, BAGS, and STICKERS -->
+    <div class="portfolio-modal modal fade" id="brochureStickerBagModal" tabindex="-1" role="dialog" aria-labelledby="brochureStickerBagModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Bags, Brochures, &amp; Stickers</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/bags-brochures-img-cap.svg" alt="bags, brochures, and stickers image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">Apart from standard posters that would be posted around campus, an assortment of other printed media products is used. The most relevant are brochures, stickers, and bags. Click below to view the different products created.</p>
+                                <a class="btn btn-primary" href="portfolio-items/graphics/brochures-bags-stickers.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: AUTONOMOUS FLYING DRONE -->
+    <div class="portfolio-modal modal fade" id="flyingDroneModal" tabindex="-1" role="dialog" aria-labelledby="flyingDroneModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Autonomous Flying Drone</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/autonomous-drone-img-cap.svg" alt="autonomous flying drone image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">An autonomous flying drone constructed and coded for the class <em>Introduction to Robotics (CSCI1951R)</em> at Brown University. The goal was to assemble a drone from scratch and write the appropriate software for enabling autonomous flight. Explored topics include safety, hardware, sensors, actuators, Unscented Kalman Filters, PID control, particle filters, and simultaneous localization and mapping (SLAM).</p>
+
+                                <div class="card mb-3">
+                                    <img class="card-img-top" src="portfolio-items/miscellaneous/robotics-assets/robot1.png" alt="autonmous flying robot image 1">
+                                </div>
+
+                                <div class="card mb-3">
+                                    <img class="card-img-top" src="portfolio-items/miscellaneous/robotics-assets/robot2.png" alt="autonmous flying robot image 2">
+                                </div>
+
+                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                    <i class="fa fa-times fa-fw" aria-hidden="true"></i>
+                                    Close Modal
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal: PHOTOGRAPHY -->
+    <div class="portfolio-modal modal fade" id="photographyModal" tabindex="-1" role="dialog" aria-labelledby="photographyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </button>
+                <div class="modal-body text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title -->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">35MM Black &amp; White Photography</h2>
+                                <!-- Icon Divider -->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon">
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image -->
+                                <img class="img-fluid rounded mb-5" src="img/portfolio/photography-img-cap.svg" alt="photography image cap">
+                                <!-- Portfolio Modal - Text -->
+                                <p class="mb-5">Click below to view a collection of 35MM black and white photographs taken, edited, and printed for the class <em>Foundational Photography (VISA0140)</em> at Brown University. There are two broad categories of photos: portraits and my final project titled "Fanimalies."</p>
+                                <a class="btn btn-primary" href="portfolio-items/miscellaneous/photography.html">
+                                    <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
+                                    View More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 
 </body>
 
