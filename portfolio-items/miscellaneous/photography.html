@@ -14,6 +14,18 @@
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Theme CSS -->
     <link href="../../css/freelancer.css" rel="stylesheet">
@@ -23,7 +35,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow animated fadeInDown" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="../../index.html#page-top">Jason Hebert</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center animated fadeInDown">
         <div class="container d-flex align-items-center flex-column">
 
             <!-- Masthead Avatar Image -->
@@ -74,11 +86,11 @@
     </header>
 
     <!-- Photography Grid Items -->
-    <section class="page-section portfolio mb-0" id="photographItems">
+    <section class="page-section portfolio mb-0" data-aos="fade-up" id="photographItems">
         <div class="container">
 
             <!-- Grid Items -->
-            <div class="row">
+            <div class="row" data-aos="fade-up">
 
                 <!-- Vertical Portraits -->
                 <div class="col-md-6 col-lg-4">
@@ -122,7 +134,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" data-aos="fade-in">
         <div class="container">
             <div class="row">
 
@@ -195,13 +207,21 @@
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/portraits/audrey.png" alt="audrey hepburn - gaby vertical portrait">
+                                    <div class="card-body">
+                                        <p class="card-text">Gaby imitating Audrey Hepburn.</p>
+                                        <a href="photography-assets/portraits/audrey.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/portraits/cyndi.png" alt="cyndi lauper - gaby vertical portrait">
+                                    <div class="card-body">
+                                        <p class="card-text">Gaby imitating Cyndi Lauper.</p>
+                                        <a href="photography-assets/portraits/cyndi.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-misc" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -242,13 +262,21 @@
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/portraits/gabriella.png" alt="gabriella horizontal portrait">
+                                    <div class="card-body">
+                                        <p class="card-text">Gabriella</p>
+                                        <a href="photography-assets/portraits/gabriella.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/portraits/zev.png" alt="zev horizontal portrait">
+                                    <div class="card-body">
+                                        <p class="card-text">Zev</p>
+                                        <a href="photography-assets/portraits/zev.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-misc" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -289,25 +317,40 @@
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/fanimalies/armdillo.png" alt="fanimalies - armadillo">
+                                    <div class="card-body">
+                                        <a href="photography-assets/fanimalies/armdillo.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/fanimalies/mother-n-child.png" alt="fanimalies - mother 'n child">
+                                    <div class="card-body">
+                                        <a href="photography-assets/fanimalies/mother-n-child.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
                                 
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/fanimalies/squorrel.png" alt="fanimalies - squorrel">
+                                    <div class="card-body">
+                                        <a href="photography-assets/fanimalies/squorrel.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
                                                          
                                 <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/fanimalies/u-wot-m8.png" alt="fanimalies - u wot m8">
+                                    <div class="card-body">
+                                        <a href="photography-assets/fanimalies/u-wot-m8.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
                                 
                                  <div class="card mb-3">
                                     <img class="card-img-top" src="photography-assets/fanimalies/wt-r-those.png" alt="fanimalies - wut r those">
+                                    <div class="card-body">
+                                        <a href="photography-assets/fanimalies/wt-r-those.png" target="_blank" class="btn btn-misc">View Image</a>
+                                    </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-misc" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -327,6 +370,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Animation JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="../../js/freelancer.min.js"></script>

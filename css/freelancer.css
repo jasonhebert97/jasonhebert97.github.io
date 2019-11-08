@@ -94,6 +94,17 @@
     --portfolio-item-color: var(--color-four);
     --btn-primary-color: var(--color-four);
     --btn-primary-hover-color: var(--color-three);
+    
+    /* palette color variables */
+    --marketing-btn-color: #B850FF;
+    --marketing-btn-hover-color: #8D18FF;
+    --uiux-btn-color: #00AEEF;
+    --uiux-btn-hover-color: #0080B0;
+    --graphics-btn-color: #ABD904;
+    --graphics-btn-hover-color: #3B7302;
+    --misc-btn-color: #FC962E;
+    --misc-btn-hover-color: #962903;
+    
 }
 
 *,
@@ -2922,6 +2933,171 @@ fieldset:disabled a.btn {
 .show > .btn-dark.dropdown-toggle:focus {
     box-shadow: 0 0 0 0.2rem rgba(82, 88, 93, 0.5);
 }
+
+
+/* *********** CUSTOM BUTTONS *********** */
+
+/* MARKETING BUTTON */
+
+.btn-marketing {
+    color: #fff;
+    background-color: var(--marketing-btn-color);
+    border-color: var(--marketing-btn-color);
+}
+
+.btn-marketing:hover {
+    color: #fff;
+    background-color: var(--marketing-btn-hover-color);
+    border-color: var(--marketing-btn-hover-color);
+}
+
+.btn-marketing:focus,
+.btn-marketing.focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+.btn-marketing.disabled,
+.btn-marketing:disabled {
+    color: #fff;
+    background-color: var(--marketing-btn-color);
+    border-color: var(--marketing-btn-color);
+}
+
+.btn-marketing:not(:disabled):not(.disabled):active,
+.btn-marketing:not(:disabled):not(.disabled).active,
+.show > .btn-marketing.dropdown-toggle {
+    color: #fff;
+    background-color: var(--marketing-btn-hover-color);
+    border-color: var(--marketing-btn-hover-color);
+}
+
+.btn-marketing:not(:disabled):not(.disabled):active:focus,
+.btn-marketing:not(:disabled):not(.disabled).active:focus,
+.show > .btn-marketing.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+/* UI-UX BUTTON */
+
+.btn-uiux {
+    color: #fff;
+    background-color: var(--uiux-btn-color);
+    border-color: var(--uiux-btn-color);
+}
+
+.btn-uiux:hover {
+    color: #fff;
+    background-color: var(--uiux-btn-hover-color);
+    border-color: var(--uiux-btn-hover-color);
+}
+
+.btn-uiux:focus,
+.btn-uiux.focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+.btn-uiux.disabled,
+.btn-uiux:disabled {
+    color: #fff;
+    background-color: var(--uiux-btn-color);
+    border-color: var(--uiux-btn-color);
+}
+
+.btn-uiux:not(:disabled):not(.disabled):active,
+.btn-uiux:not(:disabled):not(.disabled).active,
+.show > .btn-uiux.dropdown-toggle {
+    color: #fff;
+    background-color: var(--uiux-btn-hover-color);
+    border-color: var(--uiux-btn-hover-color);
+}
+
+.btn-uiux:not(:disabled):not(.disabled):active:focus,
+.btn-uiux:not(:disabled):not(.disabled).active:focus,
+.show > .btn-uiux.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+/* GRAPHICS BUTTON */
+
+.btn-graphics {
+    color: #fff;
+    background-color: var(--graphics-btn-color);
+    border-color: var(--graphics-btn-color);
+}
+
+.btn-graphics:hover {
+    color: #fff;
+    background-color: var(--graphics-btn-hover-color);
+    border-color: var(--graphics-btn-hover-color);
+}
+
+.btn-graphics:focus,
+.btn-graphics.focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+.btn-graphics.disabled,
+.btn-graphics:disabled {
+    color: #fff;
+    background-color: var(--graphics-btn-color);
+    border-color: var(--graphics-btn-color);
+}
+
+.btn-graphics:not(:disabled):not(.disabled):active,
+.btn-graphics:not(:disabled):not(.disabled).active,
+.show > .btn-graphics.dropdown-toggle {
+    color: #fff;
+    background-color: var(--graphics-btn-hover-color);
+    border-color: var(--graphics-btn-hover-color);
+}
+
+.btn-graphics:not(:disabled):not(.disabled):active:focus,
+.btn-graphics:not(:disabled):not(.disabled).active:focus,
+.show > .btn-graphics.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+/* MISC BUTTON */
+
+.btn-misc {
+    color: #fff;
+    background-color: var(--misc-btn-color);
+    border-color: var(--misc-btn-color);
+}
+
+.btn-misc:hover {
+    color: #fff;
+    background-color: var(--misc-btn-hover-color);
+    border-color: var(--misc-btn-hover-color);
+}
+
+.btn-misc:focus,
+.btn-misc.focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+.btn-misc.disabled,
+.btn-misc:disabled {
+    color: #fff;
+    background-color: var(--misc-btn-color);
+    border-color: var(--misc-btn-color);
+}
+
+.btn-misc:not(:disabled):not(.disabled):active,
+.btn-misc:not(:disabled):not(.disabled).active,
+.show > .btn-misc.dropdown-toggle {
+    color: #fff;
+    background-color: var(--misc-btn-hover-color);
+    border-color: var(--misc-btn-hover-color);
+}
+
+.btn-misc:not(:disabled):not(.disabled):active:focus,
+.btn-misc:not(:disabled):not(.disabled).active:focus,
+.show > .btn-misc.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+}
+
+/* *********** CUSTOM BUTTONS *********** */
 
 .btn-outline-primary {
     color: #1abc9c;

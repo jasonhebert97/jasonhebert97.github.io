@@ -14,7 +14,19 @@
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Theme CSS -->
     <link href="../../css/freelancer.css" rel="stylesheet">
 
@@ -23,7 +35,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow animated fadeInDown" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="../../index.html#page-top">Jason Hebert</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center animated fadeInDown">
         <div class="container d-flex align-items-center flex-column">
 
             <!-- Masthead Avatar Image -->
@@ -72,7 +84,7 @@
     </header>
 
     <!-- Background -->
-    <section class="page-section mb-0" id="background">
+    <section class="page-section mb-0" data-aos="fade-up" id="background">
         <div class="container">
 
             <!-- Heading -->
@@ -94,7 +106,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col-md-6">
                     <img class="img-fluid" src="personas-assets/current-ui@2x.png" alt="current ui image 1">
                 </div>
@@ -106,7 +118,7 @@
     </section>
 
     <!-- Research and Methods -->
-    <section class="page-section mb-0 bg-primary text-white" id="researchMethodsPersonas">
+    <section class="page-section mb-0 bg-primary text-white" data-aos="fade-up" id="researchMethodsPersonas">
         <div class="container">
 
             <!-- Heading -->
@@ -129,7 +141,7 @@
             </div>
 
             <!-- Research Accordian Content -->
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col">
                     <div class="accordion" id="researchAccordian">
 
@@ -227,7 +239,7 @@
     </section>
 
     <!-- Personas -->
-    <section class="page-section mb-0" id="personasContent">
+    <section class="page-section mb-0" data-aos="fade-up" id="personasContent">
         <div class="container">
 
             <!-- Heading -->
@@ -250,7 +262,7 @@
             </div>
 
             <!-- Persona Cards -->
-            <div class="row no-gutters">
+            <div class="row no-gutters" data-aos="fade-up">
                 <!-- TECHIE TARRU -->
                 <div class="col-md-6 p-1">
                     <div class="card border-0">
@@ -456,13 +468,11 @@
                     </div>
                 </div>
             </div>
-            
-            <!-- Storyboard -->
         </div>
     </section>
     
     <!-- Storyboard -->
-    <section class="page-section mb-0 bg-primary text-white" id="storyboardSection">
+    <section class="page-section mb-0 bg-primary text-white" data-aos="fade-up" id="storyboardSection">
         <div class="container">
             
             <!-- Heading -->
@@ -485,7 +495,7 @@
             </div>
             
             <!-- Storyboard Itself -->
-            <div class="row">
+            <div class="row" data-aos="fade-up">
                 <div class="col">
                     <img class="img-fluid" src="personas-assets/storyboard@2x.png" alt="storyboard image">
                 </div>
@@ -495,7 +505,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" data-aos="fade-in">
         <div class="container">
             <div class="row">
 
@@ -546,6 +556,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Animation JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="../../js/freelancer.min.js"></script>

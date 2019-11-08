@@ -14,7 +14,19 @@
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
     <!-- Theme CSS -->
     <link href="../../css/freelancer.css" rel="stylesheet">
 
@@ -23,7 +35,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow animated fadeInDown" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="../../index.html#page-top">Jason Hebert</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center animated fadeInDown">
         <div class="container d-flex align-items-center flex-column">
 
             <!-- Masthead Avatar Image -->
@@ -72,19 +84,19 @@
     </header>
 
     <!-- Posters Content -->
-    <section class="page-section mb-0" id="postersContent">
+    <section class="page-section mb-0" data-aos="fade-up" id="postersContent">
         <div class="container">
             <div class="row no-gutters">
                 <!-- LEFT COLUMN -->
                 <div class="col-md">
                     <div class="row no-gutters">
                         <div class="col-md p-3">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img class="card-img-top" src="brochures-bags-stickers-assets/pngs/brochure.png" alt="2019 sustainability brochure">
                                 <div class="card-body">
                                     <h5 class="card-title">Sustainability Brochure 2019</h5>
                                     <p class="card-text">Created using Adobe Illustrator and Photoshop.</p>
-                                    <a href="brochures-bags-stickers-assets/pdfs/brochure.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                    <a href="brochures-bags-stickers-assets/pdfs/brochure.pdf" target="_blank" class="btn btn-graphics">View PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -94,24 +106,24 @@
                 <div class="col-md">
                     <div class="row no-gutters">
                         <div class="col-md p-3">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img class="card-img-top" src="brochures-bags-stickers-assets/pngs/sustainability-bag-2019.png" alt="sustainability 2019 bag">
                                 <div class="card-body">
                                     <h5 class="card-title">Sustainability Bag 2019</h5>
                                     <p class="card-text">Created using Adobe Illustrator.</p>
-                                    <a href="brochures-bags-stickers-assets/pdfs/sustainability-bag-2019.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                    <a href="brochures-bags-stickers-assets/pdfs/sustainability-bag-2019.pdf" target="_blank" class="btn btn-graphics">View PDF</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row no-gutters">
                         <div class="col-md p-3">
-                            <div class="card">
+                            <div class="card" data-aos="fade-up">
                                 <img class="card-img-top" src="brochures-bags-stickers-assets/pngs/sticker.png" alt="sustainability sticker">
                                 <div class="card-body">
                                     <h5 class="card-title">Sustainability Sticker</h5>
                                     <p class="card-text">Created using Adobe Illustrator.</p>
-                                    <a href="brochures-bags-stickers-assets/pdfs/sticker.pdf" target="_blank" class="btn btn-primary">View PDF</a>
+                                    <a href="brochures-bags-stickers-assets/pdfs/sticker.pdf" target="_blank" class="btn btn-graphics">View PDF</a>
                                 </div>
                             </div>
                         </div>
@@ -122,7 +134,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" data-aos="fade-in">
         <div class="container">
             <div class="row">
 
@@ -173,6 +185,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Animation JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="../../js/freelancer.min.js"></script>

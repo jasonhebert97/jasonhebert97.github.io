@@ -15,6 +15,18 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Theme CSS -->
     <link href="css/freelancer.css" rel="stylesheet">
 
@@ -23,7 +35,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow animated fadeInDown" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Jason Hebert</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center animated fadeInDown">
         <div class="container d-flex align-items-center flex-column">
 
             <!-- Masthead Avatar Image -->
@@ -72,7 +84,7 @@
     </header>
 
     <!-- Portfolio Section -->
-    <section class="page-section portfolio" id="portfolio">
+    <section class="page-section portfolio" data-aos="fade-up" id="portfolio">
         <div class="container">
 
             <!-- Portfolio Section Heading -->
@@ -88,7 +100,7 @@
             </div>
 
             <!-- Portfolio Grid Items -->
-            <div class="row">
+            <div class="row" data-aos="fade-up">
 
                 <!-- Portfolio Item: OSUS Marketing -->
                 <div class="col-md-6 col-lg-4">
@@ -205,7 +217,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="page-section bg-primary text-white mb-0" id="about">
+    <section class="page-section bg-primary text-white mb-0" id="about" data-aos="fade-up">
         <div class="container">
 
             <!-- About Section Heading -->
@@ -237,7 +249,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" data-aos="fade-in">
         <div class="container">
             <div class="row">
 
@@ -312,7 +324,7 @@
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">As Brown University's Office of Sustainability transitioned to using the general University's visual theming policies and standards, it was important to effectively articulate the Office's new marketing tactics and streamline the entire flow for the interns. This project involves restructuring the marketing and design flow of the Office.</p>
 
-                                <a class="btn btn-primary" role="button" href="portfolio-items/marketing/osus-marketing.html">
+                                <a class="btn btn-marketing" role="button" href="portfolio-items/marketing/osus-marketing.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -352,7 +364,7 @@
                                 <img class="img-fluid rounded mb-5" src="img/portfolio/buds-marketing-img-cap.svg" alt="brown university dining services marketing image cap">
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">In collaboration with the Brown University Office of Sustainability, Brown University Dining Services requested different marketing materials and templates upon which they could expand their visual identity and reach. This project is composed of the different elements that my fellow coworkers and I worked on to aid in the development of Dining Services.</p>
-                                <a class="btn btn-primary" href="portfolio-items/marketing/buds-marketing.html">
+                                <a class="btn btn-marketing" href="portfolio-items/marketing/buds-marketing.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -391,7 +403,7 @@
                                 <img class="img-fluid rounded mb-5" src="img/portfolio/personas-img-cap.svg" alt="personas and storyboarding image cap">
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">The projectors in Sayles Hall at Brown University are supposed to do as their name implies: project some sort of image or video from a computer screen to a projector screen. There are two methods for doing this, one wired and the other wireless. The former method is relatively intuitive; however, the latter is far more complicated and lacks practical affordances. One goal for this project was to collect qualitative data and curate two personas presenting different mental models. Following that, a single storyboard was created which goes through an imagined scenario of one of those personas. This project was completed as an assignment for the class <em>User Interface / User Experience (CSCI1300)</em> at Brown University to showcase familiarity with the methodologies for curating user-interface personas and storyboards.</p>
-                                <a class="btn btn-primary" href="portfolio-items/ui-ux/personas.html">
+                                <a class="btn btn-uiux" href="portfolio-items/ui-ux/personas.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -432,7 +444,7 @@
                                 <p>Testing for universal interface effectiveness is no easy feat, the right amount of data and tools makes it somewhat feasible. For this project, a fabricated taxi company located in Memphis was the foundation for the branding; two differing web interfaces were designed alongside a single mobile interface. A form of A/B testing was utilized to discern what interface elements were effective at portraying the information and which web interface layout had higher rates of usability success.</p>
                                 <p class="mb-5">
                                     Quantitative data for two versions of a website interface was collected in-class and analyzed after. The goal of this project is to experimentally determine what elements of an interface are effective and how to take that information to offer potential solutions for the flaws. This project was completed as an assignment for the class <em>User Interface / User Experience (CSCI1300)</em> at Brown University to showcase familiarity with this specific form of user experience testing, ability to analyze data collected from said tests, and analytical evaluation on what may help the interface perform better.</p>
-                                <a class="btn btn-primary" href="portfolio-items/ui-ux/ab-testing.html">
+                                <a class="btn btn-uiux" href="portfolio-items/ui-ux/ab-testing.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -472,7 +484,7 @@
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">As the 2019 Wintersession at the Rhode Island School of Design came to an end, it was necessary to compile all projects completed for the class Web Design (GRAPH3271). All parts of this project were coded from hand sans the use of templates (such as Bootstrap). Click below to view the website.</p>
 
-                                <a class="btn btn-primary" role="button" href="https://jasonhebert97.github.io/WebDesignFinal/index.html" target="_blank">
+                                <a class="btn btn-uiux" role="button" href="https://jasonhebert97.github.io/WebDesignFinal/index.html" target="_blank">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View Site
                                 </a>
@@ -512,7 +524,7 @@
                                 <img class="img-fluid rounded mb-5" src="img/portfolio/posters-img-cap.svg" alt="posters image cap">
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">As an integral part of advertising, an extensive collection of posters and other printable graphics have accumulated and have been used primarily around the Dartmouth College and Brown University campuses. Click below to view the posters.</p>
-                                <a class="btn btn-primary" href="portfolio-items/graphics/posters.html">
+                                <a class="btn btn-graphics" href="portfolio-items/graphics/posters.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -551,7 +563,7 @@
                                 <img class="img-fluid rounded mb-5" src="img/portfolio/bags-brochures-img-cap.svg" alt="bags, brochures, and stickers image cap">
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">Apart from standard posters that would be posted around campus, an assortment of other printed media products is used. The most relevant are brochures, stickers, and bags. Click below to view the different products created.</p>
-                                <a class="btn btn-primary" href="portfolio-items/graphics/brochures-bags-stickers.html">
+                                <a class="btn btn-graphics" href="portfolio-items/graphics/brochures-bags-stickers.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -599,7 +611,7 @@
                                     <img class="card-img-top" src="portfolio-items/miscellaneous/robotics-assets/robot2.png" alt="autonmous flying robot image 2">
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-misc" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -638,7 +650,7 @@
                                 <img class="img-fluid rounded mb-5" src="img/portfolio/photography-img-cap.svg" alt="photography image cap">
                                 <!-- Portfolio Modal - Text -->
                                 <p class="mb-5">Click below to view a collection of 35MM black and white photographs taken, edited, and printed for the class <em>Foundational Photography (VISA0140)</em> at Brown University. There are two broad categories of photos: portraits and my final project titled "Fanimalies."</p>
-                                <a class="btn btn-primary" href="portfolio-items/miscellaneous/photography.html">
+                                <a class="btn btn-misc" href="portfolio-items/miscellaneous/photography.html">
                                     <i class="fa fa-paper-plane fa-fw" aria-hidden="true"></i>
                                     View More
                                 </a>
@@ -656,6 +668,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Animation JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>

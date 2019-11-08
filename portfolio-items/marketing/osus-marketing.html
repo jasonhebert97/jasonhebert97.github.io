@@ -14,6 +14,18 @@
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../../favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Theme CSS -->
     <link href="../../css/freelancer.css" rel="stylesheet">
@@ -23,7 +35,7 @@
 <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow" id="mainNav">
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top shadow animated fadeInDown" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="../../index.html#page-top">Jason Hebert</a>
             <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +59,7 @@
     </nav>
 
     <!-- Masthead -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center animated fadeInDown">
         <div class="container d-flex align-items-center flex-column">
 
             <!-- Masthead Avatar Image -->
@@ -72,7 +84,7 @@
     </header>
 
     <!-- Marketing Components Section -->
-    <section class="page-section portfolio mb-0" id="marketingComponents">
+    <section class="page-section portfolio mb-0" data-aos="fade-up" id="marketingComponents">
         <div class="container">
 
             <!-- Marketing Components Heading -->
@@ -95,7 +107,7 @@
             </div>
 
             <!-- Marketing Grid Items -->
-            <div class="row">
+            <div class="row" data-aos="fade-up">
 
                 <!-- Social Media, Today@Brown, Graphics Requests -->
                 <div class="col-md-6 col-lg-4">
@@ -139,7 +151,7 @@
     </section>
 
     <!-- Marketing Website Video Showcase Section -->
-    <section class="page-section mb-0 bg-primary text-white" id="marketingWebsite">
+    <section class="page-section mb-0 bg-primary text-white" data-aos="fade-up" id="marketingWebsite">
         <div class="container">
 
             <!-- Marketing Website Showcase Heading -->
@@ -167,7 +179,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer text-center">
+    <footer class="footer text-center" data-aos="fade-in">
         <div class="container">
             <div class="row">
 
@@ -267,7 +279,7 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-marketing" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -309,7 +321,7 @@
                                 <p class="text-justify lead">An important addition to the marketing plan was creating a streamlined means of producing data visualizations that were mindful of the newly accepted university visual standards. Four different types of graphs were made into templates: vertical bar, horizontal bar, line, and pie. All templates were made using Microsoft Excel and require minimal visual changes from the user.</p>
                                 <p class="text-justify lead">Below is an example of the horizontal bar chart. To use, a user simply has to input the data in the designated areas and tweak small parts of the visualization. Click the button below to download the Excel file:</p>
                                 
-                                 <a class="btn btn-primary mb-3" href="osus-marketing-assets/data-visualization/horizontal-bar-chart-example.xlsx">
+                                 <a class="btn btn-marketing mb-3" href="osus-marketing-assets/data-visualization/horizontal-bar-chart-example.xlsx">
                                     <i class="fa fa-download fa-fw" aria-hidden="true"></i>
                                     Download Example Excel File
                                 </a>
@@ -328,7 +340,7 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-marketing" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -384,7 +396,7 @@
                                     </div>
                                 </div>
 
-                                <button class="btn btn-primary" href="#" data-dismiss="modal">
+                                <button class="btn btn-marketing" href="#" data-dismiss="modal">
                                     <i class="fa fa-times fa-fw" aria-hidden="true"></i>
                                     Close Modal
                                 </button>
@@ -403,6 +415,12 @@
 
     <!-- Plugin JavaScript -->
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Animation JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Custom scripts for this template -->
     <script src="../../js/freelancer.min.js"></script>
